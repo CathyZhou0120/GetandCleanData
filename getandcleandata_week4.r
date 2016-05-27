@@ -24,7 +24,7 @@ train.all<-cbind(subject_train,y_train,x_train)
 
 #Extracts only the measurements on the mean and standard deviation for each measurement
 
-feature.names<-grepl(".*mean.* | .*std.*",features)
+feature.names<-grepl(".*mean.*|.*std.*",features)
 feature.lable<-features[feature.names,2]
 feature.lable<-gsub("[-|()]","",feature.lable)
 
